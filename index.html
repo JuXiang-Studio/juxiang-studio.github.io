@@ -1,42 +1,95 @@
-<!doctype html>
-<html>
-	<head>
-		<title>聚象工作室</title>
-	</head>
-	<body>
+<!DOCTYPE html>  
+<html lang="zh">  
+<head>  
+    <title>聚象工作室</title>
+    <style>  
+        body {  
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background-color: #f1f1f1;  
+            color: #333;  
+        }  
+        header {  /*顶栏*/
+            background-color: #00AAAA;  
+            color: #fff;  
+            padding: 20px;  
+            text-align: center;  
+        }  
+        .h1-1 {  
+            margin: 0;  
+        }  
+        .container {  
+            max-width: 980px;  
+            margin: auto;  
+            padding: 6px;  
+        }
+        .section {
+	        background-color: #fff;  
+            padding: 30px;  
+            border-radius: 30px;  
+            box-shadow: 0 2px 4px rgba(0,0,0,0.4);  
+            margin-bottom: 40px; 
+    	}
+        .floating-button {  
+		    position: fixed;
+		    bottom: 60px; /* 到底部距离 */
+		    right: 40px; /* 到右侧距离 */
+		    padding: 14px 24px; /* 按钮高,宽 */
+		    background-color: #009D00; /* 按钮颜色 */
+		    color: white;
+		    border: none;
+		    border-radius: 12px;
+		    cursor: pointer;
+		    font-size: 16px;
+		    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+		}
+		.floating-button:hover {  
+		    background-color: #00AA00; /* 鼠标悬停时按钮颜色 */  
+		}
+		.big-text {  
+            font-size: 50px;
+        }
+		.title {  
+            font-size: 36px;
+        }
+        footer {  /*底栏*/
+            background-color: #00AAAA;  
+            color: #fff;  
+            text-align: center;  
+            padding: 20px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <header>
+		<h1 class="h1-1"><font color="#FF7F27">JuXiang Studio</font></h1>
+		<h1 class="h1-1"><span class="big-text">Hello,World!</span></h1>
+    </header>
+    
+	
+    <div class="container" align="center">
+		<h1 class="title" align="left"><font color="#00E009">青萍音乐</font></h1>
+    	<div class="section">  
+        	<h4><font color="#00E009">发现好音乐</font></h4>  
+        	<p>在Android、Windows和DuckweedOS设备上畅听</p>
+    	</div>
+    	
+    </div>
+    
+    <!-- <a href="https://cn.bing.com"><button class="floating-button">获取青萍OS</button></a> -->
+    
+	<footer>
+    	<h3><font color="#c6c6c6">关注我们</font></h3>
+    	<a href="https://space.bilibili.com/1345353920"><img src="bilibili.ico" height="20" width="20"></a>
+		<p class="h1-1">B站</p>
 		<br>
-		<h1 align="center">Hello,World!</h1>
+    	<a href="https://github.com/JuXiang-Studio"><img src="github.ico" height="20" width="20"></a>
+		<p class="h1-1">Github</p>
 		<br>
-		<br>
-		<br>
-		
-		<dialog open>
-		  <p>嗨！朋友，今天过得怎么样？:)</p>
-		  <form method="dialog">
-		    <button>很糟糕</button>
-		    <button>还不错</button>
-		    <button>很开心</button>
-		  </form>
-		</dialog>
-		
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		
-		<hr>
-		<h4>联系我们</h4>
-		<a href="https://space.bilibili.com/1345353920"><button>bilibili</button></a>
-		<a href="https://github.com/JuXiang-Studio"><button>Github</button></a>
-		<h5 align="center">&copy 聚象工作室 保留所有权利。</h5>
-	</body>
+        <p>&copy; 2025 聚象工作室 保留所有权利。</p>  
+    </footer>
+    
+</script>  
+</body>  
 </html>
